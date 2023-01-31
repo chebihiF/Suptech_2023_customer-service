@@ -27,6 +27,7 @@ public class CustomerAPI {
         return customerService.save(customerRequestDTO);
     }
 
+    @GetMapping("/customers/{id}")
     public CustomerResponseDTO getCustomer(@PathVariable Long id){
         return customerService.getCustomer(id);
     }
